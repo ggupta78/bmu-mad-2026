@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_height="wrap_content"
+  android:layout_width="match_parent"
+  android:id="@+id/scroll_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <Button
+    android:id="@+id/btn_color"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="160dp"
+    android:layout_marginTop="36dp"
+    app:backgroundTint="@null"
+    android:text="Color"
+    app:cornerRadius="5dp"
+    android:background="@drawable/custom_oval"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageButton
+    android:id="@+id/imageButton"
+    android:layout_width="142dp"
+    android:layout_height="50dp"
+    android:layout_marginStart="132dp"
+    android:layout_marginTop="44dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:scaleType="fitCenter"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_color"
+    app:srcCompat="@drawable/login_button_png_13"
+    tools:ignore="ContentDescription" />
+
+  <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="104dp"
+    android:background="@drawable/custom_btn_bg_pressed"
+    android:text="Button"
+    app:backgroundTint="@null"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+  <RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button">
+
+    <ToggleButton
+      android:id="@+id/toggleButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#2B7DC6"
+      android:textColor="@color/white"
+      android:layout_centerHorizontal="true"
+      android:textOff="Disabled"
+      android:textOn="Enabled" />
+
+    <androidx.appcompat.widget.SwitchCompat
+      android:id="@+id/switch1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/toggleButton"
+      android:layout_marginTop="20dp"
+      android:text="USB Debugging"
+      android:layout_centerHorizontal="true"
+      android:textSize="20sp"
+      app:switchPadding="10dp" />
+
+    <CheckBox
+      android:id="@+id/checkBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="52dp"
+      android:text="Checkbox Text"
+      android:layout_below="@+id/switch1" />
+
+    <RadioGroup
+      android:id="@+id/radio_group"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/checkBox"
+      android:layout_marginTop="50dp">
+
+      <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:checked="true"
+        android:text="RadioButton option 1" />
+
+      <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2"
+        android:text="RadioButton option 2" />
+    </RadioGroup>
+
+    <LinearLayout
+      android:id="@+id/layout_spinner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/radio_group"
+      android:layout_marginTop="25dp"
+      android:layout_centerHorizontal="true">
+
+      <TextView
+        android:id="@+id/text_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="Select a TV Show" />
+
+      <Spinner
+        android:id="@+id/spinner_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
