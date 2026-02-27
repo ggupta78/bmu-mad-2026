@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">ToDoApp_Simple</string>
+  <string name="edit_todo_hint">Enter todo</string>
+  <string name="btn_add_text">Add</string>
+</resources>
